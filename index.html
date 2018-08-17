@@ -356,7 +356,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed [-hnV] [-e&lt;script&gt;] [-f&lt;script文件&gt;][文本文件]</span><br></pre></td></tr></table></figure>
 <h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><hr>
 <ul>
-<li>-e<script>或–expression=<script> 以选项中指定的script来处理输入的文本文件。</li>
+<li>-e&lt;…&gt;或–expression=&lt;…&gt; 以选项中指定的script来处理输入的文本文件。</li>
 <li>-f&lt;script文件&gt;或–file=&lt;script文件&gt; 以选项中指定的script文件来处理输入的文本文件。</li>
 <li>-h或–help 显示帮助。</li>
 <li>-n或–quiet或–silent 仅显示script处理后的结果。</li>
@@ -396,7 +396,7 @@
 <h4 id="以单词为单位替换"><a href="#以单词为单位替换" class="headerlink" title="以单词为单位替换"></a>以单词为单位替换</h4><hr>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed <span class="string">'s/要被取代的字串/新的字串/g'</span> testfile</span><br></pre></td></tr></table></figure>
 <h4 id="直接修改文件内容-危险动作-i"><a href="#直接修改文件内容-危险动作-i" class="headerlink" title="直接修改文件内容(危险动作) -i"></a>直接修改文件内容(危险动作) -i</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed -i <span class="string">'s/\.$/\!/g'</span> regular_express.txt</span><br><span class="line">sed -i <span class="string">'$a # This is a test'</span> regular_express.txt</span><br></pre></td></tr></table></figure>
-</script></li></ul>
+
           
         
       

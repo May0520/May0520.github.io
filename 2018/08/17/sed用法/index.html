@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="语法 1sed [-hnV] [-e&amp;lt;script&amp;gt;] [-f&amp;lt;script文件&amp;gt;][文本文件] 参数说明  -e或–expression= 以选项中指定的script来处理输入的文本文件。 -f&amp;lt;script文件&amp;gt;或–file=&amp;lt;script文件&amp;gt; 以选项中指定的script文件来处理输入的文本文件。 -h或–help 显示帮助。 -n或–quie">
+<meta name="description" content="语法 1sed [-hnV] [-e&amp;lt;script&amp;gt;] [-f&amp;lt;script文件&amp;gt;][文本文件] 参数说明  -e&amp;lt;…&amp;gt;或–expression=&amp;lt;…&amp;gt; 以选项中指定的script来处理输入的文本文件。 -f&amp;lt;script文件&amp;gt;或–file=&amp;lt;script文件&amp;gt; 以选项中指定的script文件来处理输入的文本文件。 -h或–h">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sed用法">
 <meta property="og:url" content="http://yoursite.com/2018/08/17/sed用法/index.html">
 <meta property="og:site_name" content="老羊皮">
-<meta property="og:description" content="语法 1sed [-hnV] [-e&amp;lt;script&amp;gt;] [-f&amp;lt;script文件&amp;gt;][文本文件] 参数说明  -e或–expression= 以选项中指定的script来处理输入的文本文件。 -f&amp;lt;script文件&amp;gt;或–file=&amp;lt;script文件&amp;gt; 以选项中指定的script文件来处理输入的文本文件。 -h或–help 显示帮助。 -n或–quie">
+<meta property="og:description" content="语法 1sed [-hnV] [-e&amp;lt;script&amp;gt;] [-f&amp;lt;script文件&amp;gt;][文本文件] 参数说明  -e&amp;lt;…&amp;gt;或–expression=&amp;lt;…&amp;gt; 以选项中指定的script来处理输入的文本文件。 -f&amp;lt;script文件&amp;gt;或–file=&amp;lt;script文件&amp;gt; 以选项中指定的script文件来处理输入的文本文件。 -h或–h">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-17T05:13:43.141Z">
+<meta property="og:updated_time" content="2018-08-17T05:17:39.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sed用法">
-<meta name="twitter:description" content="语法 1sed [-hnV] [-e&amp;lt;script&amp;gt;] [-f&amp;lt;script文件&amp;gt;][文本文件] 参数说明  -e或–expression= 以选项中指定的script来处理输入的文本文件。 -f&amp;lt;script文件&amp;gt;或–file=&amp;lt;script文件&amp;gt; 以选项中指定的script文件来处理输入的文本文件。 -h或–help 显示帮助。 -n或–quie">
+<meta name="twitter:description" content="语法 1sed [-hnV] [-e&amp;lt;script&amp;gt;] [-f&amp;lt;script文件&amp;gt;][文本文件] 参数说明  -e&amp;lt;…&amp;gt;或–expression=&amp;lt;…&amp;gt; 以选项中指定的script来处理输入的文本文件。 -f&amp;lt;script文件&amp;gt;或–file=&amp;lt;script文件&amp;gt; 以选项中指定的script文件来处理输入的文本文件。 -h或–h">
 
 
 
@@ -355,7 +355,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed [-hnV] [-e&lt;script&gt;] [-f&lt;script文件&gt;][文本文件]</span><br></pre></td></tr></table></figure>
 <h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><hr>
 <ul>
-<li>-e<script>或–expression=<script> 以选项中指定的script来处理输入的文本文件。</li>
+<li>-e&lt;…&gt;或–expression=&lt;…&gt; 以选项中指定的script来处理输入的文本文件。</li>
 <li>-f&lt;script文件&gt;或–file=&lt;script文件&gt; 以选项中指定的script文件来处理输入的文本文件。</li>
 <li>-h或–help 显示帮助。</li>
 <li>-n或–quiet或–silent 仅显示script处理后的结果。</li>
@@ -395,7 +395,7 @@
 <h4 id="以单词为单位替换"><a href="#以单词为单位替换" class="headerlink" title="以单词为单位替换"></a>以单词为单位替换</h4><hr>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed <span class="string">'s/要被取代的字串/新的字串/g'</span> testfile</span><br></pre></td></tr></table></figure>
 <h4 id="直接修改文件内容-危险动作-i"><a href="#直接修改文件内容-危险动作-i" class="headerlink" title="直接修改文件内容(危险动作) -i"></a>直接修改文件内容(危险动作) -i</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed -i <span class="string">'s/\.$/\!/g'</span> regular_express.txt</span><br><span class="line">sed -i <span class="string">'$a # This is a test'</span> regular_express.txt</span><br></pre></td></tr></table></figure>
-</script></li></ul>
+
       
     </div>
     
@@ -560,7 +560,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参数说明"><span class="nav-number">1.1.</span> <span class="nav-text">参数说明</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参数说明"><span class="nav-number">1.1.</span> <span class="nav-text">参数说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动作说明"><span class="nav-number">1.2.</span> <span class="nav-text">动作说明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">2.</span> <span class="nav-text">实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#以行为单位添加"><span class="nav-number">2.1.</span> <span class="nav-text">以行为单位添加</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以行为单位删除"><span class="nav-number">2.2.</span> <span class="nav-text">以行为单位删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以行为单位插入"><span class="nav-number">2.3.</span> <span class="nav-text">以行为单位插入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以行为单位替换"><span class="nav-number">2.4.</span> <span class="nav-text">以行为单位替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以单词为单位替换"><span class="nav-number">2.5.</span> <span class="nav-text">以单词为单位替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#直接修改文件内容-危险动作-i"><span class="nav-number">2.6.</span> <span class="nav-text">直接修改文件内容(危险动作) -i</span></a></li></ol></li></ol></div>
             
 
           </div>
